@@ -1,0 +1,151 @@
+/* ========== Estilos Gerais ========== */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ========== Estilos da Área de Input ========== */
+.input-area {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.input-area input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.input-area button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #4cae4c;
+}
+
+/* ========== Estilos da Área de Filtros ========== */
+.filter-area {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.filter-button {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #e9ecef;
+}
+
+.filter-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* ========== Estilos da Lista de Tarefas ========== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+ul li span {
+    flex-grow: 1;
+    cursor: pointer; /* Indica que o span é clicável para editar */
+}
+
+ul li.concluida span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+ul li button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+ul li button:hover {
+    background-color: #c9302c;
+}
+
+ul li button:nth-child(2) { /* Botão "Editar" */
+    background-color: #ffc107; /* Amarelo */
+    color: #333;
+}
+
+ul li button:nth-child(2):hover {
+    background-color: #e0a800;
+}
+
+ul li button:nth-child(3) { /* Botão "Riscar/Desmarcar" */
+    background-color: #5cb85c; /* Verde */
+    color: white;
+}
+
+ul li button:nth-child(3):hover {
+    background-color: #4cae4c;
+}
+
+/* ========== Estilos do Link de Voltar ========== */
+.voltar-inicio {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6c757d; /* Cinza */
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.voltar-inicio:hover {
+    background-color: #5a6268;
+}

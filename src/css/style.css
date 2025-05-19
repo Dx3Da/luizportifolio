@@ -1,0 +1,388 @@
+/* ==========================================================================
+   ESTILOS GERAIS
+   ========================================================================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2 {
+    color: #000000;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ==========================================================================
+   CABEÇALHO PRINCIPAL (APENAS O TÍTULO NA ÁREA superior)
+   ========================================================================== */
+.header-principal {
+    background-color: #dc354600; 
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 300px; 
+    text-align: center;
+}
+
+.header-principal .logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* ==========================================================================
+   MENU DE NAVEGAÇÃO (BARRA SEPARADA ABAIXO)
+   ========================================================================== */
+.menu {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-top: 20px; 
+}
+
+.menu nav ul {
+    display: inline-block;
+}
+
+.menu nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu nav .link a {
+    color: #f8f9fa;
+    font-weight: bold;
+    font-size: 1.1em;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu nav .link a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out;
+}
+
+.menu nav .link a:hover:before {
+    width: 100%;
+}
+
+.menu nav .link a.active {
+    color: #007bff;
+    font-weight: 700;
+}
+
+.menu nav .link a.active:before {
+    width: 100%;
+    background-color: #007bff;
+}
+
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL (GRID LAYOUT)
+   ========================================================================== */
+.conteudo-principal {
+   display: grid;
+   grid-template-rows: auto auto auto; 
+   gap: 20px;
+   padding: 20px;
+   max-width: 1200px;
+   margin: 20px auto;
+}
+
+
+/* ==========================================================================
+   SEÇÃO SOBRE MIM (ÁREA CINZA MENOR)
+   ========================================================================== */
+.sobre-mim-container {
+    grid-column: 1 / 2;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+.sobre-mim-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #212529;
+}
+
+.sobre-mim-container p {
+    font-size: 1em;
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   SEÇÃO REDES SOCIAIS (ÁREA ROXA)
+   ========================================================================== */
+.redes-sociais-container {
+    grid-column: 1 / 2;
+    background-color: #7360c5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociais-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.redes-sociais-container .redes-sociais {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.redes-sociais-container .redes-sociais img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.redes-sociais-container .redes-sociais img:hover {
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   OUTRAS SEÇÕES (FORMACÕES, PROJETOS, CONTATO, RODAPÉ) - MANTENHA OS ESTILOS EXISTENTES
+   ========================================================================== */
+section#formacoes.formacoes-secao {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section#formacoes.formacoes-secao h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #212529;
+}
+
+section#formacoes.formacoes-secao .formacoes-lista {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section#formacoes.formacoes-secao .formacoes-lista .formacao-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+section#formacoes.formacoes-secao .formacoes-lista .formacao-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #007bff;
+}
+
+section#formacoes.formacoes-secao .formacoes-lista .formacao-item p {
+    margin-bottom: 8px;
+    color: #495057;
+}
+
+section#projetos.projetos-secao {
+    padding: 50px 0;
+    background-color: #e9ecef;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section#projetos.projetos-secao h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #212529;
+}
+
+section#projetos.projetos-secao p {
+    color: #6c757d;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+section#projetos.projetos-secao .projetos-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+}
+
+section#projetos.projetos-secao .projetos-menu li.projeto {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+    width: calc(33% - 30px);
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+section#projetos.projetos-secao .projetos-menu li.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section#projetos.projetos-secao .projetos-menu li.projeto a {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #495057;
+}
+
+section#contato.contato-secao {
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+section#contato.contato-secao h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #212529;
+}
+
+section#contato.contato-secao p {
+    color: #6c757d;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+section#contato.contato-secao .contato-area form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+section#contato.contato-secao .contato-area .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+section#contato.contato-secao .contato-area label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #495057;
+    font-size: 1em;
+}
+
+section#contato.contato-secao .contato-area input[type="text"],
+section#contato.contato-secao .contato-area input[type="email"],
+section#contato.contato-secao .contato-area input[type="number"],
+section#contato.contato-secao .contato-area textarea {
+    width: calc(100% - 16px);
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+section#contato.contato-secao .contato-area textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+section#contato.contato-secao .contato-area button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+section#contato.contato-secao .contato-area button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* ==========================================================================
+   RODAPÉ
+   ========================================================================== */
+
+footer.rodape {
+    text-align: center;
+    padding: 25px 0;
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-radius: 0 0 8px 8px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+footer.rodape p {
+    margin: 0;
+}
+
+/* ==========================================================================
+   DESIGN RESPONSIVO (AJUSTE CONFORME NECESSÁRIO)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .conteudo-principal {
+        grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+
+    .sobre-mim-container,
+    .descricao-principal,
+    .redes-sociais-container {
+        grid-column: 1 / 2; /* Ocupam a largura total */
+    }
+}
