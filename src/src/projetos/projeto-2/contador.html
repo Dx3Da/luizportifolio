@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Aprimorado</title>
+    <link rel="stylesheet" href="./src/css/contador.css">
+</head>
+<body>
+    <a href="../../../index.html" class="voltar-inicio">Voltar ao Início</a>
+    <div class="container">
+        <h1>Contador</h1>
+        <span id="valorContador">0</span>
+        <div class="buttons">
+            <button onclick="decrementar()">Decrementar</button>
+            <button onclick="resetar()">Resetar</button>
+            <button onclick="incrementar()">Incrementar</button>
+        </div>
+        <div class="history-area">
+            <h2>Histórico</h2>
+            <ul id="historicoContador"></ul>
+        </div>
+    </div>
+    <script src="./src/js/contador.js"></script>
+</body>
+</html>
